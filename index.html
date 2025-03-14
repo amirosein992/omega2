@@ -24,7 +24,14 @@
       <button class="card-btn" onclick="addCard('K')">K</button>
       <button class="card-btn" onclick="addCard('A')">A</button>
     </div>
-    
+    <!-- True Count Section -->
+<div class="true-count-section">
+    <label for="remaining-decks">Remaining Decks:</label>
+    <input type="number" id="remaining-decks" min="1" placeholder="Enter decks" />
+    <button onclick="calculateTrueCount()">Calculate True Count</button>
+    <div id="true-count">True Count: 0</div>
+</div>
+
     <div class="count-display">
       <h2>Running Count: <span id="running-count">0</span></h2>
       <h2>True Count: <span id="true-count">0</span></h2>
