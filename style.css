@@ -23,8 +23,9 @@ h1 {
 
 .card-buttons {
   display: flex;
-  flex-direction: column;  /* تغییر جهت دکمه‌ها به عمودی */
-  align-items: center;
+  flex-direction: row;  /* قرار دادن دکمه‌ها به صورت افقی */
+  flex-wrap: wrap; /* اگر تعداد دکمه‌ها زیاد باشه، در چند خط نمایش داده بشن */
+  justify-content: center; /* دکمه‌ها در وسط قرار بگیرند */
   margin: 20px 0;
 }
 
@@ -37,7 +38,7 @@ h1 {
   color: white;
   border: none;
   border-radius: 5px;
-  width: 100px; /* اندازه ثابت دکمه‌ها */
+  width: 80px; /* اندازه دکمه‌ها */
 }
 
 .card-btn:hover {
