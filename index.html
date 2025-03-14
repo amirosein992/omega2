@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+v<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +32,7 @@
     <!-- Total Decks Section -->
     <div class="total-decks-section">
         <label for="total-decks">Total Decks:</label>
-        <input type="number" id="total-decks" min="1" placeholder="Enter total decks" />
+        <input type="number" id="total-decks" min="1" placeholder="Enter total decks" oninput="updateTotalDecks()" />
     </div>
 
     <!-- Cards Played and Cards Remaining Section -->
@@ -43,9 +43,6 @@
 
     <!-- True Count Section -->
     <div class="true-count-section">
-        <label for="remaining-decks">Remaining Decks:</label>
-        <input type="number" id="remaining-decks" min="1" placeholder="Enter decks" />
-        <button onclick="calculateTrueCount()">Calculate True Count</button>
         <div id="true-count">True Count: 0</div>
     </div>
 
