@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omega II Card Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Omega II Card Counter</h1>
+    <div class="card-input">
+      <button class="card-btn" onclick="addCard(2)">2</button>
+      <button class="card-btn" onclick="addCard(3)">3</button>
+      <button class="card-btn" onclick="addCard(4)">4</button>
+      <button class="card-btn" onclick="addCard(5)">5</button>
+      <button class="card-btn" onclick="addCard(6)">6</button>
+      <button class="card-btn" onclick="addCard(7)">7</button>
+      <button class="card-btn" onclick="addCard(8)">8</button>
+      <button class="card-btn" onclick="addCard(9)">9</button>
+      <button class="card-btn" onclick="addCard(10)">10</button>
+      <button class="card-btn" onclick="addCard('J')">J</button>
+      <button class="card-btn" onclick="addCard('Q')">Q</button>
+      <button class="card-btn" onclick="addCard('K')">K</button>
+      <button class="card-btn" onclick="addCard('A')">A</button>
+    </div>
+    
+    <div class="count-display">
+      <h2>Running Count: <span id="running-count">0</span></h2>
+      <h2>True Count: <span id="true-count">0</span></h2>
+    </div>
+
+    <button id="reset-btn" onclick="resetCount()">Reset Count</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
