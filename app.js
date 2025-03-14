@@ -39,8 +39,12 @@ function updateTotalDecks() {
 
 // Calculate the True Count
 function calculateTrueCount() {
-  if (totalDecks > 0) {
-    const trueCount = runningCount / (totalDecks * 52 / 52); // Adjust the divisor according to the number of total decks
+  // Ensure that there are cards remaining to calculate the true count
+  if (totalDecks > 0 && (totalDecks * 52 - cardsPlayed) > 0) {
+    const remainingDecks = (totalDecks * 52 - cardsPlayed) / 52;
+    const trueCount = runningCount / remainingDecks;
     document.getElementById('true-count').textContent = "True Count: " + trueCount.toFixed(2);
+  } else {
+    document.getElementById('true-count').textContent = "True Count: 0";
   }
 }
